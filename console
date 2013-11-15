@@ -1,0 +1,14 @@
+<?php
+
+require 'vendor/autoload.php';
+
+$config = require 'config.php';
+
+use Builder\Command\CreateCommand;
+use Symfony\Component\Console\Application;
+
+
+
+$application = new Application();
+$application->add((new CreateCommand())->setOptions($config));
+$application->run();

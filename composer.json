@@ -1,0 +1,19 @@
+{
+    "name": "cousenavi/pbuilder",
+    "description": "project builder tool",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Fedor Avetisov",
+            "email": "cousenavi@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "2.3.x-dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "Builder\\": "src/"
+        }
+    }
+}
